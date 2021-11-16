@@ -272,3 +272,54 @@ a:hover {
 #mensaje1, #mensaje2 {
     font-weight: bold;
 }
+
+/* RESPONSIVE PAGES */
+@media (max-width: 992px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    div#cardsSection {
+        flex-direction: column;
+    }
+
+    #card50 {
+        margin-bottom: 40px;
+    }
+
+    #card30 {
+        margin-bottom: 40px;
+    }
+
+    #finalSection {
+        flex-direction: column;
+    }
+
+    #resultadosSection {
+        border-left: none;
+        width: 100%;
+        padding: 0px;
+    }
+
+    #formSection {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0px;
+    }
+
+    a {
+        width: 40%;
+        transform: translateX(70%);
+    }
+
+}
+/* @media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 1400px) { ... } */
