@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+p#introduccion {
+    text-align: center;
+    font-weight: 500;
+}
+
+div#cardsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ANIMACIÓN PARA LAS CARTAS */
+/* Carta 50% */
+#card50 {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: tomato;
+    border: 4px solid tomato;
+    margin: 0 2% 0 2%;
+    transition: all 0.8s;
+}
+
+#num50 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0%;
+    font-weight: bolder;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+
+#info50 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    color: transparent;
+    transition: all 0.8s;
+}
+
+#sub50 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateY(20px);
+}
+
+#parrafo50 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 5% 0 5%;
+    transform: translateY(280%);
+}
+
+#card50:hover {
+    background-color: white;
+}
+
+#card50:hover #info50 {
+    transform: scale(1);
+    color: tomato;
+}
+
+#card50:hover #num50 {
+    transform: scale(0.6) translateY(-30px);
+    color: tomato;
+}
+
+/* Carta 30% */
+#card30 {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: tomato;
+    border: 4px solid tomato;
+    margin: 0 2% 0 2%;
+    transition: all 0.8s;
+}
+
+#num30 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0%;
+    font-weight: bolder;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+
+#info30 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    color: transparent;
+    transition: all 0.8s;
+}
+
+#sub30 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(20px);
+}
+
+#parrafo30 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 5% 0 5%;
+    transform: translateY(280%);
+}
+
+#card30:hover {
+    background-color: white;
+}
+
+#card30:hover #info30 {
+    transform: scale(1);
+    color: tomato;
+}
+
+#card30:hover #num30 {
+    transform: scale(0.6) translateY(-30px);
+    color: tomato;
+}
+
+/* Carta 20% */
+#card20 {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: tomato;
+    border: 4px solid tomato;
+    margin: 0 2% 0 2%;
+    transition: all 0.8s;
+}
+
+#num20 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0%;
+    font-weight: bolder;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+
+#info20 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    color: transparent;
+    transition: all 0.8s;
+}
+
+#sub20 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(20px);
+}
+
+#parrafo20 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 5% 0 5%;
+    transform: translateY(280%);
+}
+
+#card20:hover {
+    background-color: white;
+}
+
+#card20:hover #info20 {
+    transform: scale(1);
+    color: tomato;
+}
+
+#card20:hover #num20 {
+    transform: scale(0.6) translateY(-30px);
+    color: tomato;
+}
+
+/* SECCIÓN DE FORMULARIO */
+#formSection {
+    width: 50%;
+    margin-bottom: 5px;
+    padding: 0 30px 10px 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    height: 50px;
+    width: 180px;
+    background-color: tomato;
+    border: 3px solid tomato;
+    text-align: center;
+    color: white;
+    transition: all 0.8s;
+}
+
+a:hover {
+    color: tomato;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* SECCIÓN DE RESULTADOS */
+#finalSection {
+    display: flex;
+}
+
+#resultadosSection {
+    width: 50%;
+    margin-bottom: 5px;
+    padding: 0 30px 10px 30px;
+    border-left: 2px dotted tomato;
+}
+
+#mensaje1, #mensaje2 {
+    font-weight: bold;
+}

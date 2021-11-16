@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas personales</title>
+    <link rel="stylesheet" href="finanzas.css">
+</head>
+<body>
+    <h1>Finanzas personales</h1>
+    <p id="introduccion">Descubre si estás usando la regla 50/30/20 para manejar tus finanzas personales,
+        <br> uno de los métodos más recomendados por los expertos.</p>
+    <br>
+    <div id="cardsSection">
+        <div class="card" id="card50">
+            <p class="numPorcentaje" id="num50">50%</p>
+            <div class="informacion" id="info50">
+                <p class="subtitle" id="sub50">Necesidades básicas</p>
+                <p class="parrafo" id="parrafo50">Se encuentran los gastos en vivienda, alimentación, mantenimiento y transporte.</p>
+            </div>
+        </div>
+        <div class="card" id="card30">
+            <p class="numPorcentaje" id="num30">30%</p>
+            <div class="informacion" id="info30">
+                <p class="subtitle" id="sub30">Lifestyle</p>
+                <p class="parrafo" id="parrafo30">Se encuentran los gastos en entretenimiento, gimnasio, salidas con amigos y viajes.</p>
+            </div>
+        </div>
+        <div class="card" id="card20">
+            <p class="numPorcentaje" id="num20">20%</p>
+            <div class="informacion" id="info20">
+                <p class="subtitle" id="sub20">Ahorro</p>
+                <p class="parrafo" id="parrafo20">Se encuentran los ahorros para emergencias, pagos de deudas y dinero para inversiones.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="finalSection">
+    <div id="formSection">
+        <h2>Calculemos tus gastos mensuales!</h2>
+        <p>Vamos a calcular tus finanzas personales, cuál es tu ingreso mensual, cuánto gastas al mes y en qué lo gastas para al final poder determinar cómo estás distribuyendo tu dinero en tu vida diaria.
+            <br><br>Con esto podemos darnos qué tan cerca nos encontramos del método 50/30/20 y empezar a tomar acción para llegar a esta meta en nuestras finanzas personales.
+        </p>
+        <br>
+        <form action="">
+            <label for="inputIngresoMensual">
+                1. Ingresa tu ingreso mensual
+            </label>
+            <br>
+            <input id="inputIngresoMensual" type="number">
+            <br><br>
+            <label for="inputGastosBasicos">
+                2. Ingresa tus gastos mensuales destinados a las necesidades básicas
+            </label>
+            <br>
+            <input id="inputGastosBasicos" type="number">
+            <br><br>
+            <label for="inputGastosLifestyle">
+                3. Ingresa tus gastos mensuales destinados a lifestyle
+            </label>
+            <br>
+            <input id="inputGastosLifestyle" type="number">
+            <br><br>
+            <label for="inputAhorros">
+                4. Ingresa el monto que dispones para ahorros
+            </label>
+            <br>
+            <input id="inputAhorros" type="number">
+            <br><br><br>
+            <a href="#" onclick="onClickButton()"><span>Ver resultados</span></a>
+        </form>
+    </div>
+    <div id="resultadosSection">
+        <h2>Revisemos tus resultados</h2>
+        <p id="resultadoIngresoMensual"></p>
+        <p id="mensaje1"></p>
+        <p id="resultadoPorcentajeRecomendado50"></p>
+        <p id="resultadoPorcentajeRecomendado30"></p>
+        <p id="resultadoPorcentajeRecomendado20"></p>
+        <p id="mensaje2"></p>
+        <p id="porcentajeGastosBasicos"></p>
+        <p id="porcentajeLifestyle"></p>
+        <p id="porcentajeAhorros"></p>
+    </div>
+    </div>
+    <script src="./finanzas.js"></script>
+</body>
+</html>
